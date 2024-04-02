@@ -1,45 +1,117 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Minha Loja Virtual</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Minha loja de Relogios</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <style>
+        .lista-de.Relogios li {
+            width: 200px; 
+            float: left; 
+            margin-right: 20px; 
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Minha Loja Virtual</h1>
-  </header>
-  
-  <section class="sobre">
-    <div class="container">
-      <div class="sobre-imagem">
-        <img src="https://fake-api-tau.vercel.app/ebac_sports/bola.webp" alt="Imagem da Loja">
-      </div>
-      <div class="sobre-texto">
-        <h2>Sobre a Loja</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id quam ligula. Duis at quam eu magna gravida lacinia.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="produtos">
-    <div class="container">
-      <h2>Nossos Produtos</h2>
-      <div class="produtos-lista">
-        <div class="produto">
-          <img src="https://fake-api-tau.vercel.app/ebac_sports/bola.webp" alt="Produto 1">
-          <h3>Produto 1</h3>
-          <p>Descrição do Produto 1</p>
-          <button>Adicionar ao Carrinho</button>
+    <header>
+        <div class="container container-flex" id="menu-hamburguer">
+            <h1>Loja de Relogios</h1>
+            <div class="menu-hamburguer">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-        <!-- Adicione mais produtos aqui -->
-      </div>
+        <nav>
+            <div class="container">
+                <ul>
+                    <li>
+                        <a href="#">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#">Relogios</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="sobre-a-loja">
+        <div class="container container-flex">
+            <img src="./Imagens/Sobre a loja.jpg" alt="imagem sobre a loja ">
+            <div>
+                <h2>Sobre a Loja</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi recusandae saepe quod fugiat, nesciunt ea veniam illo cumque itaque eum magni quisquam placeat, dolores illum voluptatem provident obcaecati nulla eius!</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque incidunt inventore illo vero, deleniti vitae eos. Ducimus voluptatum nostrum nihil, sed praesentium aperiam tempora deleniti, cupiditate repellat laborum blanditiis officiis.</p>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <main>
+            <section>
+                <h2>Melhores marcas de Relogios</h2>
+                <div class="lista">
+                    <article class="lista-de Relogios">
+                        <ul class="container-flex">
+                            <li>
+                                <img src="./Imagens/Relogio 1.jpg" alt="">
+                                <h3>Relogio Rolex</h3>                    
+                                <p>
+                                    Data de lançamento inicial: 20 de março de 2024
+                                </p>
+                                <div class="price">
+                                    <strong>R$ 92.389,85</strong>
+                                </div>
+                                <button type="button">Comprar</button>
+                            </li>
+                            <li class="item-central">
+                                <img src="./Imagens/Relogio 2.jpg" alt="">
+                                <h3>Relogio Cartier</h3>
+                                <p>
+                                    Data de lançamento inicial: 20 de junho de 2024
+                                </p>
+                                <div class="price">
+                                    <strong>R$ 74.219,15</strong>
+                                </div>
+                                <button type="button">Comprar</button>
+                            </li>
+                            <li>
+                                <img src="./Imagens/Relogio 3.jpg" alt="">
+                                <h3>Relogio Omega</h3>
+                                <p>
+                                    Data de lançamento inicial: 17 de setembro de 2013 
+                                </p>
+                                <div class="price">
+                                    <strong>R$ 65.149,90</strong>
+                                </div>
+                                <button type="button">Comprar</button>
+                            </li>
+                            <li>
+                                <img src="./Imagens/Relogio 4.jpg" alt="">
+                                <h3>Relogio Longines</h3>
+                                <p>
+                                    Data de lançamento inicial: 18 de maio de 2023
+                                </p>
+                                <div class="price">
+                                    <strong>R$ 48.159,90</strong>
+                                </div>
+                                <button type="button">Comprar</button>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+        </main>
     </div>
-  </section>
 
-  <footer>
-    <p>&copy; 2024 Minha Loja Virtual</p>
-  </footer>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
 </html>
