@@ -2,7 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto',sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+ul {
+  list-style: none; 
 }
 
 .container {
@@ -28,7 +32,7 @@ header {
   z-index: 1;
 }
 
-header > .container{
+header > .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -42,7 +46,6 @@ nav {
 }
 
 nav li {
-  list-style: none;
   display: inline;
   margin-right: 16px;
   font-size: 18px;
@@ -60,7 +63,7 @@ nav li a {
   cursor: pointer;
 }
 
-.menu-hamburguer span{
+.menu-hamburguer span {
   height: 2px;
   width: 100%;
   background-color: #fff;
@@ -87,12 +90,12 @@ section {
 }
 
 .lista {
-  margin-top: 16px ;
+  margin-top: 16px;
 }
 
-.lista ul{
+.lista ul {
   display: grid;
-  grid-template-columns: repeat( 4 , 24.5%);
+  grid-template-columns: repeat(4, 24.5%);
   column-gap: 1%;
 }
 
@@ -128,78 +131,76 @@ button:hover {
 }
 
 .lista-de.Relogios li img {
-    width: 200px;
-    height: auto; 
+  width: 200px;
+  height: auto;
 }
 
-@media  screen and ( max-width: 640px) {
-
+@media screen and (max-width: 640px) {
   .container {
-      max-width: 90%;
-      display: block;
-  } 
-  
-  header > .container{
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      padding-bottom: 16px;
+    max-width: 90%;
+    display: block;
+  }
+
+  header > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-bottom: 16px;
   }
 
   .sobre-a-loja {
-      display: flex;
+    display: flex;
   }
-  
+
   .sobre-a-loja img {
-      max-width: 100%;
-      margin-right: 0;
-      margin-bottom: 2%;
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 2%;
   }
 
   .menu-hamburguer {
-      display: block;
+    display: block;
   }
 
-  .menu-hamburguer span{
-      height: 2px;
-      width: 100%;
-      background-color: #fff;
-      display: block;
-      margin-bottom: 4px;
+  .menu-hamburguer span {
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    display: block;
+    margin-bottom: 4px;
   }
 
   .lista ul {
-      display: block;
-      column-gap: 1%;
-      row-gap: 5%;
+    display: block;
+    column-gap: 1%;
+    row-gap: 5%;
   }
 
   button {
-      margin-bottom: 10px;
+    margin-bottom: 10px;
   }
-
 }
 
-@media screen and ( min-width: 641px) and ( max-width: 1023px) {
-  .container{
-      max-width: 90%;
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+  .container {
+    max-width: 90%;
   }
 
   .sobre-a-loja .container-flex {
-      display: block;
+    display: block;
   }
-  
+
   .sobre-a-loja img {
-      max-width: 100%;
-      margin-right: 0;
-      margin-bottom: 2%;
-  }   
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 2%;
+  }
 
   .lista .container-flex {
-      grid-template-columns: repeat(2, 49%);
+    grid-template-columns: repeat(2, 49%);
   }
 
   button {
-      margin-bottom: 10px;
+    margin-bottom: 10px;
   }
 }
